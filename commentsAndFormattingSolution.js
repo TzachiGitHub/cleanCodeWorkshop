@@ -1,8 +1,9 @@
+// comments
 //1
 
-function combine(a, b) {
+const combine = (a, b) => {
   return a + b;
-}
+};
 
 //2
 $scope.model = {
@@ -10,7 +11,7 @@ $scope.model = {
   nav: "bar",
 };
 
-const actions = function () {
+const actions = () => {
   // ...
 };
 
@@ -21,7 +22,7 @@ doStuff();
 // doSoMuchStuff();
 
 //4
-function hashIt(data) {
+const hashIt = (data) => {
   // The hash
   let hash = 0;
 
@@ -37,7 +38,7 @@ function hashIt(data) {
     // Convert to 32-bit integer
     hash &= hash;
   }
-}
+};
 
 //formatting:
 //1
@@ -47,8 +48,8 @@ const DAYS_IN_MONTH = 30;
 const SONGS = ["Back In Black", "Stairway to Heaven", "Hey Jude"];
 const ARTISTS = ["ACDC", "Led Zeppelin", "The Beatles"];
 
-function eraseDatabase() {}
-function restoreDatabase() {}
+const eraseDatabase = () => {};
+const restoreDatabase = () => {};
 
 class Animal {}
 class Alpaca {}
