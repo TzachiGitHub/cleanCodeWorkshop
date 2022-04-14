@@ -25,11 +25,11 @@ const Car = {
   carColor: "Blue",
 };
 
-function paintCar(car, color) {
+const paintCar = (car, color) => {
   car.carColor = color;
-}
+};
 
-function createMicrobrewery(name) {
+const createMicrobrewery = (name) => {
   const breweryName = name || "Hipster Brew Co.";
   // ...
-}
+};
