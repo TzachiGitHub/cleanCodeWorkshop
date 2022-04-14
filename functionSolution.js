@@ -14,7 +14,8 @@ const userName = "Ryan McDermott";
 const newName = splitIntoFirstAndLastName(userName);
 
 //3 - don't change the state of a global variable unless you explicitly mean to -
-const addItemToCart = (cart, item) => cart.push({ ...item, date: Date.now() });
+const addItemToCart = (cart, item) =>
+  cart.push({ item: { ...item }, date: Date.now() });
 
 //4 - don't use unneeded conditions - shorten the code if possible
 const handleSelectNamePhycianCheckbox = (e) =>
@@ -39,7 +40,7 @@ const getMortgage = (amount, patient) => {
 };
 
 const validateMortgagePriviliges = (patient) => {
-  if (!patient || !patient.hasBadCredit || patient.accountBalance <= 0)
+  if (!patient || patient.hasBadCredit || patient.accountBalance <= 0)
     throw new Error("no mortgage priviliges");
 };
 
