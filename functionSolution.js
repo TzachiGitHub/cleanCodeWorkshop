@@ -47,7 +47,7 @@ const STATE_INTEREST = 0.05;
 const calculateAllowedMortgage = (amount, accountBalance) => {
   const maxAmount = accountBalance * 3;
   const bankProfit = 0.03;
-  const amountPercentageWithInterest = 1 + stateInterest + bankProfit;
+  const amountPercentageWithInterest = 1 + STATE_INTEREST + bankProfit;
   const approvedAmuount = maxAmount >= amount ? amount : maxAmount;
 
   const years = 20;
@@ -58,7 +58,7 @@ const calculateAllowedMortgage = (amount, accountBalance) => {
 
   const allowedMortgate = {
     amount: approvedAmuount,
-    interest: stateInterest + bankProfit,
+    interest: STATE_INTEREST + bankProfit,
     monthlyReturns,
   };
   return allowedMortgate;
