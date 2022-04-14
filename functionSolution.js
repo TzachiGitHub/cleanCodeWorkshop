@@ -1,6 +1,6 @@
 //1 - each function should do one thing -
 const emailActiveClients = (clients) =>
-  clients.filter(isActiveClient).forEach(email);
+  clients.filter(isActiveClient).forEach((client) => email(client));
 
 const isActiveClient = (client) => {
   const clientRecord = database.lookup(client);
