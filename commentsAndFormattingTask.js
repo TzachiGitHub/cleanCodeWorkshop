@@ -24,6 +24,9 @@ const actions = function () {
 };
 
 doStuff();
+// doOtherStuff();
+// doSomeMoreStuff();
+// doSoMuchStuff();
 
 function hashIt(data) {
   // The hash
