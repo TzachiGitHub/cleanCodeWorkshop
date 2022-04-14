@@ -17,12 +17,8 @@ const actions = () => {
 
 //3
 doStuff();
-// doOtherStuff();
-// doSomeMoreStuff();
-// doSoMuchStuff();
 
 //4
-
 function hashIt(data) {
   let hash = 0;
   const length = data.length;
