@@ -43,7 +43,7 @@ const validateMortgagePriviliges = (patient) => {
     throw new Error("no mortgage priviliges");
 };
 
-const stateInterest = 0.05;
+const STATE_INTEREST = 0.05;
 const calculateAllowedMortgage = (amount, accountBalance) => {
   const maxAmount = accountBalance * 3;
   const bankProfit = 0.03;
