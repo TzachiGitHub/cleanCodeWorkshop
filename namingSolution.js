@@ -36,3 +36,6 @@ const paintCar = (car, color) => {
 const createMicrobrewery = (name = "Hipster Brew Co.") => {
   // ...
 };
+
+//7 - don't use misguiding names on variable -
+const alivePatients = patients.filter(({ isAlive }) => isAlive);
