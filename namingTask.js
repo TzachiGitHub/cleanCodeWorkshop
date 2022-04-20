@@ -33,3 +33,5 @@ const createMicrobrewery = (name) => {
   const breweryName = name || "Hipster Brew Co.";
   // ...
 };
+
+const allPatients = patients.filter(({ alive }) => alive);
