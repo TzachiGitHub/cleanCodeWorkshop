@@ -1,24 +1,23 @@
 // comments
-//1
 
-const combine = (a, b) => {
-  return a + b;
-};
+//1 - remove comments
+const add = (a, b) => a + b;
 
-//2
+//2 - remove comments
 $scope.model = {
   menu: "foo",
   nav: "bar",
 };
 
+//3 - move to ES6 - remove the 'function' use, remove comments
 const actions = () => {
   // ...
 };
 
-//3
+//4 - remove unnecessary commented out code
 doStuff();
 
-//4
+//5 - remove obvious comments
 function hashIt(data) {
   let hash = 0;
   const length = data.length;
@@ -34,19 +33,22 @@ function hashIt(data) {
 
 //formatting:
 //1
+// keep constants all in upper-case
 const DAYS_IN_WEEK = 7;
 const DAYS_IN_MONTH = 30;
 
 const SONGS = ["Back In Black", "Stairway to Heaven", "Hey Jude"];
 const ARTISTS = ["ACDC", "Led Zeppelin", "The Beatles"];
 
+// keep unified camelCase standard for function/variable names
 const eraseDatabase = () => {};
 const restoreDatabase = () => {};
 
+// components/classes starts with upper-case
 class Animal {}
 class Alpaca {}
 
-//2
+//2 - Function callers and callees should be close -
 class PerformanceReview {
   constructor(employee) {
     this.employee = employee;
