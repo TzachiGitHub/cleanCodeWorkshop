@@ -4,7 +4,7 @@
  * 2016-02-03: Removed type-checking (LI)
  * 2015-03-14: Added combine with type-checking (JR)
  */
-function combine(a, b) {
+function add(a, b) {
   return a + b;
 }
 
